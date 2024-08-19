@@ -1,0 +1,59 @@
+{
+    "company": {
+        "name": "QA Pass"
+    },
+    "table_data": [
+        ["Company Name", "MS Agarwal Foundries Pvt Ltd"],
+        ["Project Name", "Reward Points division for Panel Award"],
+        ["Test Environment", "UAT"]
+    ],
+    "project_report": {
+        "desc": "Reward points should be divisible amongst the nominations",
+        "details": "Award should be Pre-configured and roles must be assigned to the configured users"
+    },
+    "test_cases": [
+        {
+            "desc": "To verify that for single user nomination the employee must receive complete reward points.",
+            "steps": "Nominate single User in single nomination when the panel nomination starts",
+            "expected_result": "Nominations are done successfully",
+            "actual_result": "Employee is nominated successfully",
+            "status": "Pass"
+        },
+        {
+            "desc": "To verify that for multiple user nomination the reward points is divided equally as per the reward value",
+            "steps": "Nominate multiple Users in single nomination when the panel nomination starts",
+            "expected_result": "Nominations are done successfully",
+            "actual_result": "Employee is nominated successfully",
+            "status": "Pass"
+        },
+        {
+            "desc": "To verify that winner selector able to announce single user for single nomination",
+            "steps": "Winner selector announces winner when the date starts",
+            "expected_result": "Awarded successfully. Mail and Feed is generated",
+            "actual_result": "Employee receive points, mail and feed",
+            "status": "Pass"
+        },
+        {
+            "desc": "To verify that winner selector able to announce multiple user for single nomination",
+            "steps": "Winner selector announces winner when the date starts",
+            "expected_result": "Awarded successfully. Mail and Feed is generated",
+            "actual_result": "Employees receive points, mail and feed",
+            "status": "Pass"
+        },
+        {
+            "desc": "To verify recipient receives full reward value for single nomination",
+            "steps": "Recipient logs in to the platform and validates point statement",
+            "expected_result": "Points received as expected",
+            "actual_result": "Points received as expected",
+            "status": "Pass"
+        },
+        {
+            "desc": "To verify recipient receives divided reward value for multiple nomination",
+            "steps": "Recipient logs in to the platform and validates point statement",
+            "expected_result": "Points received as expected",
+            "actual_result": "Points received as expected",
+            "status": "Pass"
+        }
+    ],
+    "conclusion": "Conclusion of the report goes here."
+}
